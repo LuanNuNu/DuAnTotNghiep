@@ -1,0 +1,180 @@
+﻿<Window x:Class="DuAn_QuanLiKhachSan.PageChild.phieuDatPhong"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DuAn_QuanLiKhachSan.PageChild"
+        xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="phieuDatPhong" Height="700" Width="1380" WindowStyle="None" AllowsTransparency="True" Background="Transparent">
+
+    <Border Background="{DynamicResource SecundaryBackgroundColor}"  CornerRadius="20" BorderThickness="2" BorderBrush="#7f7cf1">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="500"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,0,8,0" Height="30" Orientation="Horizontal" FlowDirection="RightToLeft">
+                <Button x:Name="btnClose" Style="{StaticResource IconButtonsStyle}" Content="{DynamicResource close}" Click="btnClose_Click" Tag="IsCloseButton"/>
+                <Button x:Name="btnMinimize" Style="{DynamicResource IconButtonsStyle}" Content="{DynamicResource minimize}" Click="btnMinimize_Click"/>
+            </StackPanel>
+
+            <TextBlock Grid.Row="1" Text="PHIẾU ĐẶT PHÒNG" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Foreground="{DynamicResource PrimaryTextColor}"/>
+            
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="400"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Orientation="Vertical">
+                    <TextBlock Text="Thông tin khách hàng"  Foreground="{DynamicResource PrimaryTextColor}" FontSize="18" FontWeight="Bold" FontFamily="Bahnschrift" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10"/>
+                    <StackPanel Orientation="Vertical" Margin="20 0">
+                        <Label Content="MÃ KHÁCH HÀNG" FontWeight="Bold" Foreground="{DynamicResource PrimaryTextColor}"/>
+                        <TextBox Tag="Mã khách hàng tự động" Style="{DynamicResource TextBoxStyle}" HorizontalAlignment="Left" Width="360" FontSize="15" IsEnabled="False" Foreground="{DynamicResource PrimaryTextColor}"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Margin="20 0">
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="TÊN KHÁCH HÀNG" FontWeight="Bold" Foreground="{DynamicResource PrimaryTextColor}"/>
+                            <fa:IconImage Icon="User" Style="{DynamicResource Icon}"/>
+                        </StackPanel>
+                        <TextBox Style="{DynamicResource TextBoxStyle}" HorizontalAlignment="Left" Width="360" FontSize="15" Foreground="{DynamicResource PrimaryTextColor}"/>
+
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Margin="20 0">
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="CĂN CƯỚC CÔNG DÂN" FontWeight="Bold" Foreground="{DynamicResource PrimaryTextColor}"/>
+                            <fa:IconImage Icon="ContactCard" Style="{DynamicResource Icon}"/>
+                        </StackPanel>
+                        <TextBox Style="{DynamicResource TextBoxStyle}" HorizontalAlignment="Left" Width="360" FontSize="15" Foreground="{DynamicResource PrimaryTextColor}"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Margin="20 0">
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="GIỚI TÍNH" FontWeight="Bold" Foreground="{DynamicResource PrimaryTextColor}"/>
+                            <fa:IconImage Icon="Genderless" Style="{DynamicResource Icon}"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <RadioButton Content="Nam" FontWeight="Bold" FontSize="14" Margin="10" Foreground="{DynamicResource PrimaryTextColor}"/>
+                            <RadioButton Content="Nữ" FontSize="14" FontWeight="Bold" Foreground="{DynamicResource PrimaryTextColor}"/>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Margin="20 0">
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="SỐ ĐIỆN THOẠI" FontWeight="Bold" Foreground="{DynamicResource PrimaryTextColor}"/>
+                            <fa:IconImage Icon="Phone" Style="{DynamicResource Icon}"/>
+                        </StackPanel>
+                        <TextBox Style="{DynamicResource TextBoxStyle}" HorizontalAlignment="Left" Width="360" FontSize="15" Foreground="{DynamicResource PrimaryTextColor}"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Margin="20 0">
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="ĐỊA CHỈ" FontWeight="Bold" Foreground="{DynamicResource PrimaryTextColor}"/>
+                            <fa:IconImage Icon="AddressBook" Style="{DynamicResource Icon}"/>
+                        </StackPanel>
+                        <TextBox Style="{DynamicResource TextBoxStyle}" HorizontalAlignment="Left" Width="360" FontSize="15" Foreground="{DynamicResource PrimaryTextColor}"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Margin="20 0">
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="QUỐC GIA" FontWeight="Bold" Foreground="{DynamicResource PrimaryTextColor}"/>
+                            <fa:IconImage Icon="Earth" Style="{DynamicResource Icon}"/>
+                        </StackPanel>
+                        <TextBox Style="{DynamicResource TextBoxStyle}" HorizontalAlignment="Left" Width="360" FontSize="15" Foreground="{DynamicResource PrimaryTextColor}"/>
+                    </StackPanel>
+                </StackPanel>
+                
+                <!--THÔNG TIN ĐẶT PHÒNG-->
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="120"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                <StackPanel Orientation="Vertical" Grid.Column="1" Margin="20 0">
+                    <TextBlock Text="Thông tin đặt phòng"  Foreground="{DynamicResource PrimaryTextColor}" FontSize="18" FontWeight="Bold" FontFamily="Bahnschrift" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10"/>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel Orientation="Vertical" Margin="20 0" Width="160">
+                                    <Label Content="NGÀY BẮT ĐẦU" FontWeight="Bold" Foreground="{DynamicResource PrimaryTextColor}"/>
+                                    <DatePicker />
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical" Margin="20 0" Width="160">
+                                <Label Content="NGÀY KẾT THÚC" FontWeight="Bold" Foreground="{DynamicResource PrimaryTextColor}"/>
+                                <DatePicker />
+                            </StackPanel>
+                        </StackPanel>
+
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Column="1">
+                                <StackPanel Orientation="Vertical" Margin="20 0" Width="160">
+                                    <Label Content="GIỜ NHẬN PHÒNG" FontWeight="Bold" Foreground="{DynamicResource PrimaryTextColor}"/>
+                                    <materialDesign:TimePicker />
+                                </StackPanel>
+                            <StackPanel Orientation="Vertical" Margin="20 0" Width="160">
+                                    <Label Content="GIỜ TRẢ PHÒNG" FontWeight="Bold" Foreground="{DynamicResource PrimaryTextColor}"/>
+                                    <materialDesign:TimePicker />
+                                </StackPanel>
+                            </StackPanel>
+                    </Grid>
+                </StackPanel>
+
+                    <StackPanel Grid.Row="1">
+                        <TextBlock Text="Danh sách phòng trống"  Foreground="{DynamicResource PrimaryTextColor}" FontSize="18" FontWeight="Bold" FontFamily="Bahnschrift" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="4"/>
+                        <DataGrid x:Name="danhSachPhongTrong" Margin="10 0 10 0" Grid.ColumnSpan="2" Style="{DynamicResource DataGridStyle1}"  CellStyle="{DynamicResource DataGridCellStyle1}" ColumnHeaderStyle="{DynamicResource DataGridColumnHeaderStyle1}" RowStyle="{DynamicResource DataGridRowStyle1}">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="SỐ PHÒNG" Width="*" Binding="{Binding Name}" IsReadOnly="True"/>
+                            <DataGridTextColumn Header="LOẠI PHÒNG" Width="*" Binding="{Binding Value}" IsReadOnly="True"/>
+
+
+                              <DataGridTemplateColumn Header="THÊM" IsReadOnly="True" Width="auto">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button Style="{StaticResource gridEditButton}">
+                                                <fa:IconImage Icon="Add" Style="{StaticResource gridBtnIcon}"/>
+                                            </Button>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    </StackPanel>
+                    <StackPanel Grid.Row="2">
+                        <TextBlock Text="Phòng đã chọn"  Foreground="{DynamicResource PrimaryTextColor}" FontSize="18" FontWeight="Bold" FontFamily="Bahnschrift" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="4"/>
+                        <DataGrid x:Name="PhongChon" Margin="10 0 10 0" Grid.ColumnSpan="2" Style="{DynamicResource DataGridStyle1}"  CellStyle="{DynamicResource DataGridCellStyle1}" ColumnHeaderStyle="{DynamicResource DataGridColumnHeaderStyle1}" RowStyle="{DynamicResource DataGridRowStyle1}">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="SỐ PHÒNG" Width="*" Binding="{Binding Name}" IsReadOnly="True"/>
+                                <DataGridTextColumn Header="SỐ NGƯỜI" Width="*" Binding="{Binding Value}" IsReadOnly="True"/>
+                                <DataGridTextColumn Header="NHẬN PHÒNG" Width="*" Binding="{Binding Value}" IsReadOnly="True"/>
+                                <DataGridTextColumn Header="TRẢ PHÒNG" Width="*" Binding="{Binding Value}" IsReadOnly="True"/>
+                                <DataGridTextColumn Header="THỜI GIAN" Width="*" Binding="{Binding Value}" IsReadOnly="True"/>
+                                <DataGridTextColumn Header="THÀNH TIỀN" Width="*" Binding="{Binding Value}" IsReadOnly="True"/>
+
+
+                                <DataGridTemplateColumn Header="TÙY CHỈNH" IsReadOnly="True" Width="auto">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button Style="{StaticResource gridRemoveButton}">
+                                                <fa:IconImage Icon="TrashCan" Style="{StaticResource gridBtnIcon}"/>
+                                            </Button>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </StackPanel>
+
+                </Grid>
+                
+            </Grid>
+            <StackPanel Orientation="Horizontal" Grid.Row="3" HorizontalAlignment="Right" Margin="0 0 20 0">
+                <Button Content="Lưu" Style="{DynamicResource MainBtn}"/>
+                <Button Content="Xóa" Style="{DynamicResource MainBtn}"/>
+            </StackPanel>
+
+        </Grid>
+    </Border>
+</Window>
