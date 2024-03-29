@@ -1,0 +1,31 @@
+D:\tmpDATN\QLBH\Super Market\bin\Debug\Super Market.exe.config
+D:\tmpDATN\QLBH\Super Market\bin\Debug\Super Market.exe.manifest
+D:\tmpDATN\QLBH\Super Market\bin\Debug\Super Market.application
+D:\tmpDATN\QLBH\Super Market\bin\Debug\Super Market.exe
+D:\tmpDATN\QLBH\Super Market\bin\Debug\Super Market.pdb
+D:\tmpDATN\QLBH\Super Market\bin\Debug\System.Web.Services.dll
+D:\tmpDATN\QLBH\Super Market\obj\Debug\Super_Market.FrmAbout.resources
+D:\tmpDATN\QLBH\Super Market\obj\Debug\Super_Market.frmDangNhap.resources
+D:\tmpDATN\QLBH\Super Market\obj\Debug\Super_Market.frmDanhMucNhaCungCap.resources
+D:\tmpDATN\QLBH\Super Market\obj\Debug\Super_Market.frmDoiMatKhau.resources
+D:\tmpDATN\QLBH\Super Market\obj\Debug\Super_Market.frmTKDanhSachHoaDonBanHang.resources
+D:\tmpDATN\QLBH\Super Market\obj\Debug\Super_Market.frmTKDanhSachHoaDonNhapHang.resources
+D:\tmpDATN\QLBH\Super Market\obj\Debug\Super_Market.frmLapHoaDonBanHang.resources
+D:\tmpDATN\QLBH\Super Market\obj\Debug\Super_Market.frmLapHoaDonNhapHang.resources
+D:\tmpDATN\QLBH\Super Market\obj\Debug\Super_Market.frmMain.resources
+D:\tmpDATN\QLBH\Super Market\obj\Debug\Super_Market.frmQuanLyChungLoaiHang.resources
+D:\tmpDATN\QLBH\Super Market\obj\Debug\Super_Market.frmQuanLyHangHoa.resources
+D:\tmpDATN\QLBH\Super Market\obj\Debug\Super_Market.frmQuanLyNhanVien.resources
+D:\tmpDATN\QLBH\Super Market\obj\Debug\Super_Market.frmThemMatHang.resources
+D:\tmpDATN\QLBH\Super Market\obj\Debug\Super_Market.frmThemNhaCC.resources
+D:\tmpDATN\QLBH\Super Market\obj\Debug\Super_Market.frmThemNhanVien.resources
+D:\tmpDATN\QLBH\Super Market\obj\Debug\Super_Market.frmTKHangTon.resources
+D:\tmpDATN\QLBH\Super Market\obj\Debug\Super_Market.Properties.Resources.resources
+D:\tmpDATN\QLBH\Super Market\obj\Debug\Super Market.csproj.GenerateResource.cache
+D:\tmpDATN\QLBH\Super Market\obj\Debug\Super Market.csproj.CoreCompileInputs.cache
+D:\tmpDATN\QLBH\Super Market\obj\Debug\Super Market.exe.manifest
+D:\tmpDATN\QLBH\Super Market\obj\Debug\Super Market.application
+D:\tmpDATN\QLBH\Super Market\obj\Debug\Super Market.csproj.CopyComplete
+D:\tmpDATN\QLBH\Super Market\obj\Debug\Super Market.exe
+D:\tmpDATN\QLBH\Super Market\obj\Debug\Super Market.pdb
+D:\tmpDATN\QLBH\Super Market\obj\Debug\Super Market.csprojAssemblyReference.cache
