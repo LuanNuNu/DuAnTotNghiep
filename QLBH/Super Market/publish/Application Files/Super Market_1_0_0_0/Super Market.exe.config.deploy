@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <configSections>
+    </configSections>
+    <connectionStrings>
+        <add name="Super_Market.Properties.Settings.spMarketmgmtConnectionString"
+            connectionString="Data Source=SP-47C50C180EE0\Duongdx;AttachDbFilename=|DataDirectory|\spMarketmgmt.mdf;Integrated Security=True"
+            providerName="System.Data.SqlClient" />
+    </connectionStrings>
+</configuration>
