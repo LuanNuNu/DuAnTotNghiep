@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Dự án tốt nghiệp\DuAn_QuanLiKhachSan\obj\Debug\
+D:\tmpDATN\DuAnTotNghiep\DuAn_QuanLiKhachSan\obj\Debug\
 DuAn_QuanLiKhachSan
 none
 false
 DEBUG;TRACE
-D:\Dự án tốt nghiệp\DuAn_QuanLiKhachSan\App.xaml
-29156315420
+D:\tmpDATN\DuAnTotNghiep\DuAn_QuanLiKhachSan\App.xaml
+29-1582939039
 
-32-435879347
-231215110142
+36-302491612
+23-1231462057
 FormNhanVien\main.xaml;Icons\Icons.xaml;Login\LoginForm.xaml;MainStyles\Styles.xaml;MainWindow.xaml;PageChild\chiTietPhieuThue.xaml;PageChild\phieuDatPhong.xaml;PageChild\themDichVu.xaml;PageChild\themDichVuPhong.xaml;PageChild\themLoaiDichVu.xaml;PageChild\themLoaiPhong.xaml;PageChild\themNhanVien.xaml;PageChild\themPhong.xaml;PageChild\thongTinNVien.xaml;PageChild\thongtinPhong.xaml;PageChild\xuatHoaDon.xaml;Themes\DarkTheme.xaml;Themes\LightTheme.xaml;UserControls\InfoCard.xaml;Views\DatPhong.xaml;Views\DialogCustoms.xaml;Views\DichVu.xaml;Views\HoaDon.xaml;Views\KhachHang.xaml;Views\LoaiPhong.xaml;Views\NhanVien.xaml;Views\Phong.xaml;Views\thongKe.xaml;Views\trangChu.xaml;
 
-True
+False
 
