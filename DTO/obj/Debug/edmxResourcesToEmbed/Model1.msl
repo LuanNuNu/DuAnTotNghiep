@@ -218,9 +218,9 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <FunctionImportMapping FunctionImportName="GetPhongInfoByDate52" FunctionName="QL_KhachSanModel.Store.GetPhongInfoByDate">
+    <FunctionImportMapping FunctionImportName="GetPhongInfoByDate59" FunctionName="QL_KhachSanModel.Store.GetPhongInfoByDate">
       <ResultMapping>
-        <ComplexTypeMapping TypeName="QL_KhachSanModel.GetPhongInfoByDate52_Result">
+        <ComplexTypeMapping TypeName="QL_KhachSanModel.GetPhongInfoByDate59_Result">
           <ScalarProperty Name="MaPhong" ColumnName="MaPhong" />
           <ScalarProperty Name="MaPDP" ColumnName="MaPDP" />
           <ScalarProperty Name="TenLoaiPhong" ColumnName="TenLoaiPhong" />
@@ -237,7 +237,6 @@
           <ScalarProperty Name="MaKH" ColumnName="MaKH" />
           <ScalarProperty Name="SoNgay" ColumnName="SoNgay" />
           <ScalarProperty Name="SoGio" ColumnName="SoGio" />
-          <ScalarProperty Name="RowNumber" ColumnName="RowNumber" />
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>

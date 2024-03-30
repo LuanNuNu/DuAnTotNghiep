@@ -362,8 +362,8 @@ warning 6002: The table/view 'QL_KhachSan.dbo.ThongTinHoaDon' does not have a pr
         <RowType>
           <Property Name="MaPhong" Type="char" MaxLength="10" Nullable="false" />
           <Property Name="MaPDP" Type="char" MaxLength="10" />
-          <Property Name="TenLoaiPhong" Type="nvarchar" MaxLength="50" Nullable="false" />
-          <Property Name="TinhTrang" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="TenLoaiPhong" Type="nvarchar" MaxLength="50" />
+          <Property Name="TinhTrang" Type="nvarchar" MaxLength="15" Nullable="false" />
           <Property Name="GioDat" Type="time" Precision="7" />
           <Property Name="GioKetThuc" Type="time" Precision="7" />
           <Property Name="SoNguoi" Type="int" />
@@ -376,7 +376,6 @@ warning 6002: The table/view 'QL_KhachSan.dbo.ThongTinHoaDon' does not have a pr
           <Property Name="MaKH" Type="char" MaxLength="10" />
           <Property Name="SoNgay" Type="int" />
           <Property Name="SoGio" Type="int" />
-          <Property Name="RowNumber" Type="bigint" />
         </RowType>
       </CollectionType>
     </ReturnType>

@@ -422,11 +422,18 @@ namespace DuAn_QuanLiKhachSan.PageChild
                             string maDV = cell.Text;
                             cell = datagridDichVu.Columns[2].GetCellContent(row) as TextBlock;
                             int sl = int.Parse(cell.Text);
+                            bool isValid = int.TryParse(cell.Text, out sl);
+                            if (!isValid)
+                            {
+                                var ThongBao = new DialogCustoms("Số lượng phải là một số nguyên.", "Thông báo", DialogCustoms.OK);
+                                ThongBao.ShowDialog();
+                                continue;
+                            }
                             DTO.ChiTietDichVuPhieuDatPhong DVphong = bus_chiTietDichVuPDP.SelectDVPhong()
                                 .Where(c => c.MaPhong.Equals(MaPhong) && c.MaDV.Equals(maDV) && c.MaPDP.Equals(MaPDP))
                                 .FirstOrDefault();
 
-                            if (DVphong != null)
+                            if (isValid && DVphong != null)
                             {
                                 DVphong.SoLuongDV = sl;
                                 bus_chiTietDichVuPDP.UpdateDichVu(DVphong);

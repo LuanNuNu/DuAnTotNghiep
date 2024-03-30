@@ -62,6 +62,7 @@ namespace DuAn_QuanLiKhachSan.PageChild
                 }
             }
         }
+        
 
         private string FormatCurrency(decimal value)
         {
@@ -117,7 +118,8 @@ namespace DuAn_QuanLiKhachSan.PageChild
                 }
             } catch(Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                var ThongBao = new DialogCustoms(ex.Message, "Lỗi", DialogCustoms.OK);
+                ThongBao.ShowDialog();
             }
         }
 

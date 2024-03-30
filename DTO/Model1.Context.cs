@@ -1017,5 +1017,75 @@ namespace DTO
     
             return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<GetPhongInfoByDate52_Result>("[QL_KhachSanEntities].[GetPhongInfoByDate52](@selectedDate)", selectedDateParameter);
         }
+    
+        [EdmFunction("QL_KhachSanEntities", "GetPhongInfoByDate53")]
+        public virtual IQueryable<GetPhongInfoByDate53_Result> GetPhongInfoByDate53(Nullable<System.DateTime> selectedDate)
+        {
+            var selectedDateParameter = selectedDate.HasValue ?
+                new ObjectParameter("selectedDate", selectedDate) :
+                new ObjectParameter("selectedDate", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<GetPhongInfoByDate53_Result>("[QL_KhachSanEntities].[GetPhongInfoByDate53](@selectedDate)", selectedDateParameter);
+        }
+    
+        [EdmFunction("QL_KhachSanEntities", "GetPhongInfoByDate54")]
+        public virtual IQueryable<GetPhongInfoByDate54_Result> GetPhongInfoByDate54(Nullable<System.DateTime> selectedDate)
+        {
+            var selectedDateParameter = selectedDate.HasValue ?
+                new ObjectParameter("selectedDate", selectedDate) :
+                new ObjectParameter("selectedDate", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<GetPhongInfoByDate54_Result>("[QL_KhachSanEntities].[GetPhongInfoByDate54](@selectedDate)", selectedDateParameter);
+        }
+    
+        [EdmFunction("QL_KhachSanEntities", "GetPhongInfoByDate55")]
+        public virtual IQueryable<GetPhongInfoByDate55_Result> GetPhongInfoByDate55(Nullable<System.DateTime> selectedDate)
+        {
+            var selectedDateParameter = selectedDate.HasValue ?
+                new ObjectParameter("selectedDate", selectedDate) :
+                new ObjectParameter("selectedDate", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<GetPhongInfoByDate55_Result>("[QL_KhachSanEntities].[GetPhongInfoByDate55](@selectedDate)", selectedDateParameter);
+        }
+    
+        [EdmFunction("QL_KhachSanEntities", "GetPhongInfoByDate56")]
+        public virtual IQueryable<GetPhongInfoByDate56_Result> GetPhongInfoByDate56(Nullable<System.DateTime> selectedDate)
+        {
+            var selectedDateParameter = selectedDate.HasValue ?
+                new ObjectParameter("selectedDate", selectedDate) :
+                new ObjectParameter("selectedDate", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<GetPhongInfoByDate56_Result>("[QL_KhachSanEntities].[GetPhongInfoByDate56](@selectedDate)", selectedDateParameter);
+        }
+    
+        [EdmFunction("QL_KhachSanEntities", "GetPhongInfoByDate57")]
+        public virtual IQueryable<GetPhongInfoByDate57_Result> GetPhongInfoByDate57(Nullable<System.DateTime> selectedDate)
+        {
+            var selectedDateParameter = selectedDate.HasValue ?
+                new ObjectParameter("selectedDate", selectedDate) :
+                new ObjectParameter("selectedDate", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<GetPhongInfoByDate57_Result>("[QL_KhachSanEntities].[GetPhongInfoByDate57](@selectedDate)", selectedDateParameter);
+        }
+    
+        [EdmFunction("QL_KhachSanEntities", "GetPhongInfoByDate58")]
+        public virtual IQueryable<GetPhongInfoByDate58_Result> GetPhongInfoByDate58(Nullable<System.DateTime> selectedDate)
+        {
+            var selectedDateParameter = selectedDate.HasValue ?
+                new ObjectParameter("selectedDate", selectedDate) :
+                new ObjectParameter("selectedDate", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<GetPhongInfoByDate58_Result>("[QL_KhachSanEntities].[GetPhongInfoByDate58](@selectedDate)", selectedDateParameter);
+        }
+    
+        [EdmFunction("QL_KhachSanEntities", "GetPhongInfoByDate59")]
+        public virtual IQueryable<GetPhongInfoByDate59_Result> GetPhongInfoByDate59(Nullable<System.DateTime> selectedDate)
+        {
+            var selectedDateParameter = selectedDate.HasValue ?
+                new ObjectParameter("selectedDate", selectedDate) :
+                new ObjectParameter("selectedDate", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<GetPhongInfoByDate59_Result>("[QL_KhachSanEntities].[GetPhongInfoByDate59](@selectedDate)", selectedDateParameter);
+        }
     }
 }

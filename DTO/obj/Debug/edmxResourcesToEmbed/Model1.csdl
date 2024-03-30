@@ -627,8 +627,29 @@
     <FunctionImport Name="GetPhongInfoByDate51" IsComposable="true" ReturnType="Collection(QL_KhachSanModel.GetPhongInfoByDate51_Result)">
       <Parameter Name="selectedDate" Mode="In" Type="DateTime" />
     </FunctionImport>
-    <EntitySet Name="DanhSachThongTinPhongs" EntityType="QL_KhachSanModel.DanhSachThongTinPhong" />
     <FunctionImport Name="GetPhongInfoByDate52" IsComposable="true" ReturnType="Collection(QL_KhachSanModel.GetPhongInfoByDate52_Result)">
+      <Parameter Name="selectedDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="GetPhongInfoByDate53" IsComposable="true" ReturnType="Collection(QL_KhachSanModel.GetPhongInfoByDate53_Result)">
+      <Parameter Name="selectedDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <EntitySet Name="DanhSachThongTinPhongs" EntityType="QL_KhachSanModel.DanhSachThongTinPhong" />
+    <FunctionImport Name="GetPhongInfoByDate54" IsComposable="true" ReturnType="Collection(QL_KhachSanModel.GetPhongInfoByDate54_Result)">
+      <Parameter Name="selectedDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="GetPhongInfoByDate55" IsComposable="true" ReturnType="Collection(QL_KhachSanModel.GetPhongInfoByDate55_Result)">
+      <Parameter Name="selectedDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="GetPhongInfoByDate56" IsComposable="true" ReturnType="Collection(QL_KhachSanModel.GetPhongInfoByDate56_Result)">
+      <Parameter Name="selectedDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="GetPhongInfoByDate57" IsComposable="true" ReturnType="Collection(QL_KhachSanModel.GetPhongInfoByDate57_Result)">
+      <Parameter Name="selectedDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="GetPhongInfoByDate58" IsComposable="true" ReturnType="Collection(QL_KhachSanModel.GetPhongInfoByDate58_Result)">
+      <Parameter Name="selectedDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="GetPhongInfoByDate59" IsComposable="true" ReturnType="Collection(QL_KhachSanModel.GetPhongInfoByDate59_Result)">
       <Parameter Name="selectedDate" Mode="In" Type="DateTime" />
     </FunctionImport>
   </EntityContainer>
@@ -1731,6 +1752,44 @@
     <Property Type="Int32" Name="SoGio" Nullable="true" />
     <Property Type="Int64" Name="RowNumber" Nullable="true" />
   </ComplexType>
+  <ComplexType Name="GetPhongInfoByDate52_Result">
+    <Property Type="String" Name="MaPhong" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="MaPDP" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="TenLoaiPhong" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="TinhTrang" Nullable="false" MaxLength="50" />
+    <Property Type="Time" Name="GioDat" Nullable="true" />
+    <Property Type="Time" Name="GioKetThuc" Nullable="true" />
+    <Property Type="Int32" Name="SoNguoi" Nullable="true" />
+    <Property Type="DateTime" Name="NgayDat" Nullable="true" Precision="10" />
+    <Property Type="DateTime" Name="NgayKetThuc" Nullable="true" Precision="10" />
+    <Property Type="Int32" Name="Tang" Nullable="false" />
+    <Property Type="String" Name="GhiChu" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="TinhTrangThanhToan" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="TenKH" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MaKH" Nullable="true" MaxLength="10" />
+    <Property Type="Int32" Name="SoNgay" Nullable="true" />
+    <Property Type="Int32" Name="SoGio" Nullable="true" />
+    <Property Type="Int64" Name="RowNumber" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="GetPhongInfoByDate53_Result">
+    <Property Type="String" Name="MaPhong" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="MaPDP" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="TenLoaiPhong" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="TinhTrang" Nullable="false" MaxLength="50" />
+    <Property Type="Time" Name="GioDat" Nullable="true" />
+    <Property Type="Time" Name="GioKetThuc" Nullable="true" />
+    <Property Type="Int32" Name="SoNguoi" Nullable="true" />
+    <Property Type="DateTime" Name="NgayDat" Nullable="true" Precision="10" />
+    <Property Type="DateTime" Name="NgayKetThuc" Nullable="true" Precision="10" />
+    <Property Type="Int32" Name="Tang" Nullable="false" />
+    <Property Type="String" Name="GhiChu" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="TinhTrangThanhToan" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="TenKH" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MaKH" Nullable="true" MaxLength="10" />
+    <Property Type="Int32" Name="SoNgay" Nullable="true" />
+    <Property Type="Int32" Name="SoGio" Nullable="true" />
+    <Property Type="Int64" Name="RowNumber" Nullable="true" />
+  </ComplexType>
   <EntityType Name="DanhSachThongTinPhong">
     <Key>
       <PropertyRef Name="MaPhong" />
@@ -1756,7 +1815,7 @@
     <Property Name="SoNgay" Type="Int32" />
     <Property Name="SoGio" Type="Int32" />
   </EntityType>
-  <ComplexType Name="GetPhongInfoByDate52_Result">
+  <ComplexType Name="GetPhongInfoByDate54_Result">
     <Property Type="String" Name="MaPhong" Nullable="false" MaxLength="10" />
     <Property Type="String" Name="MaPDP" Nullable="true" MaxLength="10" />
     <Property Type="String" Name="TenLoaiPhong" Nullable="false" MaxLength="50" />
@@ -1774,5 +1833,95 @@
     <Property Type="Int32" Name="SoNgay" Nullable="true" />
     <Property Type="Int32" Name="SoGio" Nullable="true" />
     <Property Type="Int64" Name="RowNumber" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="GetPhongInfoByDate55_Result">
+    <Property Type="String" Name="MaPhong" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="MaPDP" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="TenLoaiPhong" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="TinhTrang" Nullable="false" MaxLength="50" />
+    <Property Type="Time" Name="GioDat" Nullable="true" />
+    <Property Type="Time" Name="GioKetThuc" Nullable="true" />
+    <Property Type="Int32" Name="SoNguoi" Nullable="true" />
+    <Property Type="DateTime" Name="NgayDat" Nullable="true" Precision="10" />
+    <Property Type="DateTime" Name="NgayKetThuc" Nullable="true" Precision="10" />
+    <Property Type="Int32" Name="Tang" Nullable="false" />
+    <Property Type="String" Name="GhiChu" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="TinhTrangThanhToan" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="TenKH" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MaKH" Nullable="true" MaxLength="10" />
+    <Property Type="Int32" Name="SoNgay" Nullable="true" />
+    <Property Type="Int32" Name="SoGio" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="GetPhongInfoByDate56_Result">
+    <Property Type="String" Name="MaPhong" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="MaPDP" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="TenLoaiPhong" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="TinhTrang" Nullable="false" MaxLength="50" />
+    <Property Type="Time" Name="GioDat" Nullable="true" />
+    <Property Type="Time" Name="GioKetThuc" Nullable="true" />
+    <Property Type="Int32" Name="SoNguoi" Nullable="true" />
+    <Property Type="DateTime" Name="NgayDat" Nullable="true" Precision="10" />
+    <Property Type="DateTime" Name="NgayKetThuc" Nullable="true" Precision="10" />
+    <Property Type="Int32" Name="Tang" Nullable="false" />
+    <Property Type="String" Name="GhiChu" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="TinhTrangThanhToan" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="TenKH" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MaKH" Nullable="true" MaxLength="10" />
+    <Property Type="Int32" Name="SoNgay" Nullable="true" />
+    <Property Type="Int32" Name="SoGio" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="GetPhongInfoByDate57_Result">
+    <Property Type="String" Name="MaPhong" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="MaPDP" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="TenLoaiPhong" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="TinhTrang" Nullable="false" MaxLength="12" />
+    <Property Type="Time" Name="GioDat" Nullable="true" />
+    <Property Type="Time" Name="GioKetThuc" Nullable="true" />
+    <Property Type="Int32" Name="SoNguoi" Nullable="true" />
+    <Property Type="DateTime" Name="NgayDat" Nullable="true" Precision="10" />
+    <Property Type="DateTime" Name="NgayKetThuc" Nullable="true" Precision="10" />
+    <Property Type="Int32" Name="Tang" Nullable="false" />
+    <Property Type="String" Name="GhiChu" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="TinhTrangThanhToan" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="TenKH" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MaKH" Nullable="true" MaxLength="10" />
+    <Property Type="Int32" Name="SoNgay" Nullable="true" />
+    <Property Type="Int32" Name="SoGio" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="GetPhongInfoByDate58_Result">
+    <Property Type="String" Name="MaPhong" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="MaPDP" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="TenLoaiPhong" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="TinhTrang" Nullable="false" MaxLength="12" />
+    <Property Type="Time" Name="GioDat" Nullable="true" />
+    <Property Type="Time" Name="GioKetThuc" Nullable="true" />
+    <Property Type="Int32" Name="SoNguoi" Nullable="true" />
+    <Property Type="DateTime" Name="NgayDat" Nullable="true" Precision="10" />
+    <Property Type="DateTime" Name="NgayKetThuc" Nullable="true" Precision="10" />
+    <Property Type="Int32" Name="Tang" Nullable="false" />
+    <Property Type="String" Name="GhiChu" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="TinhTrangThanhToan" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="TenKH" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MaKH" Nullable="true" MaxLength="10" />
+    <Property Type="Int32" Name="SoNgay" Nullable="true" />
+    <Property Type="Int32" Name="SoGio" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="GetPhongInfoByDate59_Result">
+    <Property Type="String" Name="MaPhong" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="MaPDP" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="TenLoaiPhong" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="TinhTrang" Nullable="false" MaxLength="15" />
+    <Property Type="Time" Name="GioDat" Nullable="true" />
+    <Property Type="Time" Name="GioKetThuc" Nullable="true" />
+    <Property Type="Int32" Name="SoNguoi" Nullable="true" />
+    <Property Type="DateTime" Name="NgayDat" Nullable="true" Precision="10" />
+    <Property Type="DateTime" Name="NgayKetThuc" Nullable="true" Precision="10" />
+    <Property Type="Int32" Name="Tang" Nullable="false" />
+    <Property Type="String" Name="GhiChu" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="TinhTrangThanhToan" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="TenKH" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MaKH" Nullable="true" MaxLength="10" />
+    <Property Type="Int32" Name="SoNgay" Nullable="true" />
+    <Property Type="Int32" Name="SoGio" Nullable="true" />
   </ComplexType>
 </Schema>

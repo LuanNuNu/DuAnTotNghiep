@@ -39,8 +39,7 @@ namespace DuAn_QuanLiKhachSan.Views
             dataPhong();
         }
         private void Load(object sender, RoutedEventArgs e)
-        {
-            
+        {        
             dtpChonNgay.Text = DateTime.Now.ToShortDateString();
             tpGio.Text = DateTime.Now.ToString("HH:mm:ss");
             timKiemPhongTheoThoiGian();

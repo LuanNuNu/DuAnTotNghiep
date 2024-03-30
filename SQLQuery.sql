@@ -1,6 +1,6 @@
 ﻿-------View ViewPhong-----
 
-EXEC InsertPhieuDatPhong 'KH0003','NV0003',2,N'Chưa thanh toán'
+EXEC InsertPhieuDatPhong 'KH0001','NV0003',2,N'Chưa thanh toán'
 GO
 EXEC InsertPhieuDatPhong 'KH0004','NV0003',2,N'Chưa thanh toán'
 GO
@@ -14,7 +14,9 @@ GO
 GO
 EXEC InsertChiTietPhieuDatPhong 'PDP0005','P2002','2024-03-28','2024-03-28','13:00:00','19:00:00'
 GO
-EXEC InsertChiTietPhieuDatPhong 'PDP0007','P3002','2024-03-27','2024-03-28','12:00:00','12:00:00'
+EXEC InsertChiTietPhieuDatPhong 'PDP0006','P3001','2024-04-01','2024-04-02','12:00:00','12:00:00'
+GO
+EXEC InsertChiTietPhieuDatPhong 'PDP0007','P1001','2024-03-30','2024-03-30','17:00:00','20:00:00'
 GO
 EXEC InsertChiTietDVPhieuDatPhong 'PDP0003','P3001','DV0001',2
 GO
@@ -70,102 +72,94 @@ FROM (
         ChiTietPhieuDatPhong.NgayKetThuc,
         ChiTietPhieuDatPhong.GioDat,
         ChiTietPhieuDatPhong.GioKetThuc,
-        ROW_NUMBER() OVER(PARTITION BY Phong.MaPhong ORDER BY ChiTietPhieuDatPhong.NgayDat DESC) AS RowNumber
+        ROW_NUMBER() OVER(PARTITION BY Phong.MaPhong ORDER BY ABS(DATEDIFF(day, ChiTietPhieuDatPhong.NgayDat, GETDATE()))) AS RowNumber
     FROM
         Phong
     INNER JOIN LoaiPhong ON Phong.MaLoaiPhong = LoaiPhong.MaLoaiPhong
     LEFT JOIN ChiTietPhieuDatPhong ON Phong.MaPhong = ChiTietPhieuDatPhong.MaPhong
     LEFT JOIN PhieuDatPhong ON ChiTietPhieuDatPhong.MaPDP = PhieuDatPhong.MaPDP
     LEFT JOIN KhachHang ON PhieuDatPhong.MaKH = KhachHang.MaKH
-       WHERE 
-        (CAST(GETDATE() AS DATE) BETWEEN ChiTietPhieuDatPhong.NgayDat AND ChiTietPhieuDatPhong.NgayKetThuc) OR (ChiTietPhieuDatPhong.NgayKetThuc > CAST(GETDATE() AS DATE) AND ChiTietPhieuDatPhong.NgayDat > CAST(GETDATE() AS DATE))
-		OR ChiTietPhieuDatPhong.NgayDat IS NULL
 ) AS Subquery
 WHERE RowNumber = 1;
 
 
+
+
+-----------------------------------
 CREATE FUNCTION dbo.GetPhongInfoByDate(@selectedDate DATETIME)
 RETURNS TABLE
 AS
 RETURN
 (
     SELECT
-        MaPhong,
-        MaPDP,
-        TenLoaiPhong,
-        CASE
-            WHEN @selectedDate = CONVERT(DATETIME, NgayDat) + CAST(GioDat AS DATETIME) THEN TinhTrang
-            WHEN @selectedDate BETWEEN CONVERT(DATETIME, NgayDat) + CAST(GioDat AS DATETIME) 
-			AND CONVERT(DATETIME, NgayKetThuc) + CAST(GioKetThuc AS DATETIME) THEN TinhTrang
-            WHEN @selectedDate > CONVERT(DATETIME, NgayKetThuc) + CAST(GioKetThuc AS DATETIME) THEN N'Phòng trống'
-            WHEN @selectedDate < CONVERT(DATETIME, NgayDat) + CAST(GioDat AS DATETIME) THEN N'Phòng trống'
-            ELSE N'Phòng trống'
-        END AS TinhTrang,
-        GioDat,
-        GioKetThuc,
-        SoNguoi,
-        NgayDat,
-        NgayKetThuc,
-        Tang,
-        GhiChu,
-        TinhTrangThanhToan,
-        TenKH,
-        MaKH,
-        CASE 
-            WHEN TinhTrang != N'Phòng đang thuê' THEN 0
-            ELSE 
-                CASE
-                    WHEN SoGio >= 24 THEN FLOOR(SoGio / 24)
-                    ELSE 0
-                END
-        END AS SoNgay,
-        CASE 
-            WHEN TinhTrang != N'Phòng đang thuê' THEN 0
-            ELSE 
-                CASE
-                    WHEN TinhTrang = N'Đã thanh toán' OR TinhTrangThanhToan IS NULL THEN NULL 
-                    ELSE 
-                        CASE 
-                            WHEN NgayKetThuc = NgayDat THEN DATEDIFF(hour, GioDat, GioKetThuc)
-                            ELSE DATEDIFF(day, NgayDat, NgayKetThuc) * 24 + DATEDIFF(hour, GioDat, GioKetThuc)
-                        END
-                END
-        END AS SoGio,
-		RowNumber
-    FROM (
-           SELECT
         Phong.MaPhong,
         PhieuDatPhong.MaPDP,
         LoaiPhong.TenLoaiPhong,
-        Phong.TinhTrang,
+        CASE
+            WHEN PhieuDatPhong.MaPDP IS NOT NULL AND CONVERT(DATETIME, NgayDat) + CAST(GioDat AS DATETIME) = @selectedDate THEN N'Phòng đã đặt'
+            WHEN @selectedDate BETWEEN CONVERT(DATETIME, NgayDat) + CAST(GioDat AS DATETIME) 
+			AND CONVERT(DATETIME, NgayKetThuc) + CAST(GioKetThuc AS DATETIME) THEN N'Phòng đang thuê'
+            ELSE N'Phòng trống'
+        END AS TinhTrang,
+        ChiTietPhieuDatPhong.GioDat,
+        ChiTietPhieuDatPhong.GioKetThuc,
+        PhieuDatPhong.SoNguoi,
+        ChiTietPhieuDatPhong.NgayDat,
+        ChiTietPhieuDatPhong.NgayKetThuc,
         Phong.Tang,
         Phong.GhiChu,
-        PhieuDatPhong.SoNguoi,
         PhieuDatPhong.TinhTrang AS TinhTrangThanhToan,
         KhachHang.TenKH,
         KhachHang.MaKH,
-        ChiTietPhieuDatPhong.NgayDat,
-        ChiTietPhieuDatPhong.NgayKetThuc,
-        ChiTietPhieuDatPhong.GioDat,
-        ChiTietPhieuDatPhong.GioKetThuc,
-		COALESCE(DATEDIFF(day, ChiTietPhieuDatPhong.NgayDat, ChiTietPhieuDatPhong.NgayKetThuc), '') AS SoNgay,
-		COALESCE(DATEDIFF(hour, ChiTietPhieuDatPhong.NgayDat, ChiTietPhieuDatPhong.NgayKetThuc), '') AS SoGio,
-        ROW_NUMBER() OVER(PARTITION BY Phong.MaPhong ORDER BY ChiTietPhieuDatPhong.NgayDat DESC) AS RowNumber
+        DATEDIFF(DAY, ChiTietPhieuDatPhong.NgayDat, ChiTietPhieuDatPhong.NgayKetThuc) AS SoNgay,
+        DATEDIFF(HOUR, ChiTietPhieuDatPhong.GioDat,ChiTietPhieuDatPhong.GioKetThuc) AS SoGio
     FROM
         Phong
-    INNER JOIN LoaiPhong ON Phong.MaLoaiPhong = LoaiPhong.MaLoaiPhong
-    LEFT JOIN ChiTietPhieuDatPhong ON Phong.MaPhong = ChiTietPhieuDatPhong.MaPhong
-    LEFT JOIN PhieuDatPhong ON ChiTietPhieuDatPhong.MaPDP = PhieuDatPhong.MaPDP
-    LEFT JOIN KhachHang ON PhieuDatPhong.MaKH = KhachHang.MaKH
-       WHERE 
-        (CAST(GETDATE() AS DATE) BETWEEN ChiTietPhieuDatPhong.NgayDat AND ChiTietPhieuDatPhong.NgayKetThuc) OR (ChiTietPhieuDatPhong.NgayKetThuc > CAST(GETDATE() AS DATE) AND ChiTietPhieuDatPhong.NgayDat > CAST(GETDATE() AS DATE))
-		OR ChiTietPhieuDatPhong.NgayDat IS NULL
-) AS Subquery
-    WHERE RowNumber = 1
+        LEFT JOIN ChiTietPhieuDatPhong ON Phong.MaPhong = ChiTietPhieuDatPhong.MaPhong
+        LEFT JOIN PhieuDatPhong ON ChiTietPhieuDatPhong.MaPDP = PhieuDatPhong.MaPDP
+        LEFT JOIN KhachHang ON PhieuDatPhong.MaKH = KhachHang.MaKH
+        LEFT JOIN LoaiPhong ON Phong.MaLoaiPhong = LoaiPhong.MaLoaiPhong
+    WHERE
+    (
+        CAST(ChiTietPhieuDatPhong.NgayDat AS DATETIME) + CAST(ChiTietPhieuDatPhong.GioDat AS DATETIME) <= @selectedDate
+        AND CAST(ChiTietPhieuDatPhong.NgayKetThuc AS DATETIME) + CAST(ChiTietPhieuDatPhong.GioKetThuc AS DATETIME) >= @selectedDate
+    )
+    
+    UNION
+    
+    SELECT
+        Phong.MaPhong,
+        NULL AS MaPDP,
+        LoaiPhong.TenLoaiPhong,
+        N'Phòng trống' AS TinhTrang,
+        NULL AS GioDat,
+        NULL AS GioKetThuc,
+        NULL AS SoNguoi,
+        NULL AS NgayDat,
+        NULL AS NgayKetThuc,
+        Phong.Tang,
+        Phong.GhiChu,
+        NULL AS TinhTrangThanhToan,
+        NULL AS TenKH,
+        NULL AS MaKH,
+        NULL AS SoNgay,
+        NULL AS SoGio
+    FROM
+        Phong
+		LEFT JOIN LoaiPhong ON Phong.MaLoaiPhong = LoaiPhong.MaLoaiPhong
+    WHERE
+        Phong.MaPhong NOT IN (
+            SELECT MaPhong FROM ChiTietPhieuDatPhong WHERE
+    (
+        CAST(ChiTietPhieuDatPhong.NgayDat AS DATETIME) + CAST(ChiTietPhieuDatPhong.GioDat AS DATETIME) <= @selectedDate
+        AND CAST(ChiTietPhieuDatPhong.NgayKetThuc AS DATETIME) + CAST(ChiTietPhieuDatPhong.GioKetThuc AS DATETIME) >= @selectedDate
+    )
+        )
 )
 
 
------------------------------------
+
+
 
 
 
