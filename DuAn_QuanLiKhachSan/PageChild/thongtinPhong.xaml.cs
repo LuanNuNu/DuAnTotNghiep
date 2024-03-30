@@ -1,13 +1,9 @@
-﻿using BUS;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using System.Windows;
-using DTO;
-using DuAn_QuanLiKhachSan.Views;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
@@ -15,128 +11,19 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using System.Windows.Forms;
-using System.Data;
-using DAL;
-using System.Diagnostics;
 
 namespace DuAn_QuanLiKhachSan.PageChild
 {
     /// <summary>
     /// Interaction logic for thongtinPhong.xaml
     /// </summary>
-    /// 
     public partial class thongtinPhong : Window
     {
-        static BUS_PHONG bus_Phong = new BUS_PHONG();
-        static BUS_PHIEUDATPHONG bus_PhieuDatPhong = new BUS_PHIEUDATPHONG();
-        static BUS_DICHVU bus_DichVu = new BUS_DICHVU();
-        static BUS_CHITIETDICHVUPDP bus_chiTietDichVuPDP = new BUS_CHITIETDICHVUPDP();
-        private string MaPhong { get; set; }
-        private string MaPDP { get; set; }
-        private string TinhTrangPhong { get; set; }
         public thongtinPhong()
         {
             InitializeComponent();
-        }
-        private void LoadPhongInfo(string maPhong, string maPDP, string tinhTrang)
-        {
-            tenPhong.Text = maPhong;
-            MaPhong = maPhong;
-            MaPDP = maPDP;
-            TinhTrangPhong = tinhTrang;
+            checkIn.Text = DateTime.Now.ToString();
 
-            // Lấy thông tin chi tiết của phòng từ phương thức SelectchiTietPhong()
-            var chiTietPhong = bus_Phong.SelectAllPhong().FirstOrDefault(p => p.MaPhong == maPhong && p.TinhTrang == "Phòng đang thuê");
-            // Kiểm tra xem chiTietPhong có tồn tại không
-            if (chiTietPhong != null)
-            {
-                // Gán giá trị cho các thành phần giao diện người dùng
-                DateTime? ngayDat = chiTietPhong.NgayDat;
-                DateTime? ngayKetThuc = chiTietPhong.NgayKetThuc;
-                if (ngayDat.HasValue)
-                {
-                    ngayCheckIn.Text = ngayDat.Value.ToString("dd/MM/yyyy");
-                }
-                else
-                {
-                    ngayCheckIn.Text = string.Empty; 
-                }
-                ngayCheckIn.Text = (chiTietPhong.NgayDat ?? DateTime.MinValue).ToString("dd/MM/yyyy");
-                if (chiTietPhong.GioDat.HasValue)
-                {
-                    gioCheckIn.Text = chiTietPhong.GioDat.Value.ToString(@"hh\:mm");
-                }
-                else
-                {
-                    gioCheckIn.Text = string.Empty; 
-                }
-
-                if (ngayKetThuc.HasValue)
-                {
-                    ngayCheckOut.Text = ngayKetThuc.Value.ToString("dd/MM/yyyy");
-                }
-                else
-                {
-                    ngayCheckOut.Text = string.Empty; 
-                }
-                ngayCheckOut.Text = (chiTietPhong.NgayKetThuc ?? DateTime.MinValue).ToString("dd/MM/yyyy"); //null coalescing ??
-                if (chiTietPhong.GioKetThuc.HasValue)
-                {
-                    gioCheckOut.Text = chiTietPhong.GioKetThuc.Value.ToString(@"hh\:mm");
-                }
-                else
-                {
-                    gioCheckOut.Text = string.Empty;
-                }
-
-
-                tenKh.Text = chiTietPhong.TenKH ?? ""; 
-                if (chiTietPhong.SoGio.GetValueOrDefault() > 24)
-                {
-                    icDayorHour.Kind = MaterialDesignThemes.Wpf.PackIconKind.CalendarRange;
-                    thoigGianThueP.Text = chiTietPhong.SoNgay.HasValue ? chiTietPhong.SoNgay.Value.ToString() + " ngày" : ""; 
-                }
-                else
-                {
-                    icDayorHour.Kind = MaterialDesignThemes.Wpf.PackIconKind.AlarmCheck;
-                    thoigGianThueP.Text = chiTietPhong.SoGio.HasValue ? chiTietPhong.SoGio.Value.ToString() + " giờ" : ""; 
-                }
-                slNguoi.Text = chiTietPhong.SoNguoi.HasValue ? chiTietPhong.SoNguoi.Value.ToString() : ""; 
-                tinhTrangPhong.Text = chiTietPhong.TinhTrang ?? ""; 
-                if (chiTietPhong.TinhTrang.Equals("Phòng đang thuê"))
-                {
-                    btn_NhanPhong.Visibility = Visibility.Hidden;
-                    btn_ThanhToan.Visibility = Visibility.Visible;
-                    btn_themDichVu.Visibility = Visibility.Visible;
-                }
-                tinhTrangDonDep.Text = chiTietPhong.GhiChu ?? ""; // Nếu GhiChu là null thì gán chuỗi rỗng
-            }
-        }
-
-        public thongtinPhong(string maPhong, string maPDP, string tinhTrang) : this()
-        {
-            LoadPhongInfo(maPhong, maPDP, tinhTrang);
-        }
-
-        private void Load(object sender, RoutedEventArgs e)
-        {
-            loadDataGrid();
-            loadComboBoxDV();
-        }
-        private void loadDataGrid()
-        {
-            // Giả sử danh sách chiTietPhong đã được tạo và chứa dữ liệu
-            // Lấy danh sách chi tiết phòng với điều kiện mã phòng và tình trạng hóa đơn chưa thanh toán
-            List<DichVuTheoPDP> danhSachDV = bus_chiTietDichVuPDP.SelectDichVu()
-                .Where(c => c.MaPhong.Equals(MaPhong) && c.MaPDP.Equals(MaPDP))
-                .ToList();
-            if(TinhTrangPhong != "Phòng trống")
-            {
-                // Gán nguồn dữ liệu cho DataGrid
-                datagridDichVu.ItemsSource = danhSachDV;
-
-            }
         }
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
@@ -148,37 +35,22 @@ namespace DuAn_QuanLiKhachSan.PageChild
             WindowState = WindowState.Minimized;
         }
 
+        private void btn_themDichVu_Click(object sender, RoutedEventArgs e)
+        {
+            themDichVuPhong themDichVuPhong = new themDichVuPhong();
+            themDichVuPhong.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            themDichVuPhong.Show();
+        }
         private void btn_ThanhToan_Click(object sender, RoutedEventArgs e)
         {
-            var chiTietPhong = bus_Phong.SelectAllPhong().FirstOrDefault(p => p.MaPhong == MaPhong && p.TinhTrang.Equals(TinhTrangPhong));
-            int soNgay = (int)chiTietPhong.SoNgay;
-            int soGio = (int)chiTietPhong.SoGio;
-    
-                DTO.PhieuDatPhong PDP = bus_PhieuDatPhong.SelectPDPhong().Where(c => c.MaPDP.Equals(MaPDP)).FirstOrDefault();
-                if (PDP != null)
-                {
-                    PDP.TinhTrang = "Đã thanh toán";
-                    bus_PhieuDatPhong.UpdatePDPhong(PDP);
-
-                    // Hiển thị thông báo xác nhận thanh toán
-                    var ThongBao = new DialogCustoms("Xác nhận thanh toán", "Thông báo", DialogCustoms.YesNo);
-                    if (ThongBao.ShowDialog() == true)
-                    {
-
-                        xuatHoaDon xuatHoaDon = new xuatHoaDon(MaPhong, MaPDP, soNgay, soGio);
-                        xuatHoaDon.WindowStartupLocation = WindowStartupLocation.CenterScreen;
-                        xuatHoaDon.Show();
-
-                    }
-                    // Mở cửa sổ in hóa đơn
-                    
-                }
-         
-
+            xuatHoaDon xuatHoaDon = new xuatHoaDon();
+            xuatHoaDon.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            xuatHoaDon.Show();
         }
 
         private void btn_NhanPhong_Click(object sender, RoutedEventArgs e)
         {
+<<<<<<< HEAD
             var Phong = bus_Phong.SelectAllPhong().FirstOrDefault(p => p.MaPhong.Equals(MaPhong));
             if (!Phong.NgayDat.Equals(DateTime.Now.Date))
             {
@@ -505,6 +377,11 @@ namespace DuAn_QuanLiKhachSan.PageChild
                 var ThongBao = new DialogCustoms(ex.Message, "Lỗi", DialogCustoms.OK);
                 ThongBao.ShowDialog();
             }
+=======
+            btn_NhanPhong.Visibility = Visibility.Hidden;
+            btn_ThanhToan.Visibility = Visibility.Visible;
+            btn_themDichVu.Visibility = Visibility.Visible;
+>>>>>>> c7b8578de438db69647b772d5001a251632b959d
         }
     }
 }

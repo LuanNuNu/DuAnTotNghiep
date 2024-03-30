@@ -57,6 +57,18 @@ namespace DuAn_QuanLiKhachSan
         private void rdHome_Click(object sender, RoutedEventArgs e)
         {
             frameContent.Navigate(new trangChu());
+<<<<<<< HEAD
+=======
+
+            var ThongBao = new DialogCustoms("Bạn có thật sự muốn xóa", "Thông báo", DialogCustoms.YesNo);
+            if (ThongBao.ShowDialog() == true)
+            {
+                
+                    new DialogCustoms("Xóa thành công", "Thông báo", DialogCustoms.OK).Show();
+            
+                
+            }
+>>>>>>> c7b8578de438db69647b772d5001a251632b959d
         }
 
 

@@ -1,7 +1,4 @@
-﻿using BUS;
-using DTO;
-using DuAn_QuanLiKhachSan.Views;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,8 +19,6 @@ namespace DuAn_QuanLiKhachSan.PageChild
     /// </summary>
     public partial class themPhong : Window
     {
-        static BUS_LOAIPHONG bus_LoaiPhong = new BUS_LOAIPHONG();
-        static BUS_PHONG bus_Phong = new BUS_PHONG();
         public themPhong()
         {
             InitializeComponent();
@@ -37,6 +32,7 @@ namespace DuAn_QuanLiKhachSan.PageChild
         {
             WindowState = WindowState.Minimized;
         }
+<<<<<<< HEAD
 
         private void Load(object sender, RoutedEventArgs e)
         {
@@ -135,5 +131,7 @@ namespace DuAn_QuanLiKhachSan.PageChild
             giaTheoGio.Text = string.Empty;
             giaTheoNgay.Text = string.Empty;
         }
+=======
+>>>>>>> c7b8578de438db69647b772d5001a251632b959d
     }
 }

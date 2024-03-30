@@ -32,7 +32,7 @@
                     <RowDefinition></RowDefinition>
                     <RowDefinition Height="50"></RowDefinition>
                 </Grid.RowDefinitions>
-                <Grid Grid.Row="0" Margin="10 0">
+                <Grid Grid.Row="0">
                     <TextBlock x:Name="txblMess" FontSize="14" TextAlignment="Center" VerticalAlignment="Center" FontWeight="DemiBold" TextWrapping="WrapWithOverflow"></TextBlock>
                 </Grid>
                 <Grid Grid.Row="1">

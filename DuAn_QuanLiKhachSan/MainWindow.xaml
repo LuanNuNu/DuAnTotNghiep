@@ -103,7 +103,7 @@
                     <Border CornerRadius="50" Width="50" Height="50" BorderThickness="1" BorderBrush="#FF91F9F9">
                         <Ellipse>
                             <Ellipse.Fill>
-                                <ImageBrush ImageSource="/imgs/Huỳnh Ngọc Luận_TD00468_SD1701.jpg"/>
+                                <ImageBrush ImageSource="/imgs/Ji_Chang-Wook-.jpeg"/>
                             </Ellipse.Fill>
                         </Ellipse>
                     </Border>

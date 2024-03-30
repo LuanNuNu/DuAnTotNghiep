@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using DuAn_QuanLiKhachSan.PageChild;
-using DuAn_QuanLiKhachSan.Login;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
@@ -29,6 +28,7 @@ namespace DuAn_QuanLiKhachSan.Views
 
         private void btn_datPhong_Click(object sender, RoutedEventArgs e)
         {
+            thongtinPhong thongtinPhong = new thongtinPhong();
             phieuDatPhong phieuDatPhong = new phieuDatPhong();
             phieuDatPhong.WindowStartupLocation = WindowStartupLocation.CenterScreen;
             phieuDatPhong.Show();

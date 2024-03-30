@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DuAn_QuanLiKhachSan.PageChild"
         mc:Ignorable="d"
-        Title="themLoaiPhong"    Height="320" Width="680" WindowStyle="None" AllowsTransparency="True" Background="Transparent">
+        Title="themLoaiPhong"    Height="360" Width="680" WindowStyle="None" AllowsTransparency="True" Background="Transparent">
 
 
     <Border Background="{DynamicResource SecundaryBackgroundColor}"  CornerRadius="20" BorderThickness="2" BorderBrush="#7f7cf1">
@@ -13,7 +13,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="40"/>
                 <RowDefinition Height="30"/>
-                <RowDefinition Height="160"/>
+                <RowDefinition Height="200"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <StackPanel Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,0,8,0" Height="30" Orientation="Horizontal" FlowDirection="RightToLeft">

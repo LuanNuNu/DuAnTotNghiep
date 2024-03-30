@@ -1,0 +1,10 @@
+D:\DuAn_QuanLiKhachSan\DTO_QLKS\bin\Debug\DTO_QLKS.dll.config
+D:\DuAn_QuanLiKhachSan\DTO_QLKS\bin\Debug\DTO_QLKS.dll
+D:\DuAn_QuanLiKhachSan\DTO_QLKS\bin\Debug\DTO_QLKS.pdb
+D:\DuAn_QuanLiKhachSan\DTO_QLKS\bin\Debug\EntityFramework.dll
+D:\DuAn_QuanLiKhachSan\DTO_QLKS\bin\Debug\EntityFramework.xml
+D:\DuAn_QuanLiKhachSan\DTO_QLKS\obj\Debug\DTO_QLKS.csproj.AssemblyReference.cache
+D:\DuAn_QuanLiKhachSan\DTO_QLKS\obj\Debug\DTO_QLKS.csproj.CoreCompileInputs.cache
+D:\DuAn_QuanLiKhachSan\DTO_QLKS\obj\Debug\DTO_QLKS.csproj.Up2Date
+D:\DuAn_QuanLiKhachSan\DTO_QLKS\obj\Debug\DTO_QLKS.dll
+D:\DuAn_QuanLiKhachSan\DTO_QLKS\obj\Debug\DTO_QLKS.pdb
