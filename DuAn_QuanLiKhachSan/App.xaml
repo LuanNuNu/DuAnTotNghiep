@@ -3,7 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:DuAn_QuanLiKhachSan"
              StartupUri="MainWindow.xaml">
-
     <Application.Resources>
         <ResourceDictionary>
             <Style x:Key="ColumnHeaderGripperStyle" TargetType="{x:Type Thumb}">
@@ -333,11 +332,10 @@
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
-
+                
 
             </ResourceDictionary.MergedDictionaries>
 
         </ResourceDictionary>
-      
     </Application.Resources>
 </Application>

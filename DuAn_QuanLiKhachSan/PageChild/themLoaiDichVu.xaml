@@ -24,11 +24,11 @@
             <TextBlock Grid.Row="1" Text="THÊM LOẠI DỊCH VỤ" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Foreground="{DynamicResource PrimaryTextColor}"/>
             <StackPanel Orientation="Vertical" Margin="20 0" Grid.Row="2">
                 <Label Content="LOẠI DỊCH VỤ" FontWeight="Bold" Foreground="{DynamicResource PrimaryTextColor}"/>
-                <TextBox Style="{DynamicResource TextBoxStyle}" HorizontalAlignment="Left" Width="355" FontSize="15" Foreground="{DynamicResource PrimaryTextColor}"/>
+                <TextBox x:Name="tenloai_txt" Style="{DynamicResource TextBoxStyle}" HorizontalAlignment="Left" Width="355" FontSize="15" Foreground="{DynamicResource PrimaryTextColor}"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Grid.Row="3" HorizontalAlignment="Right" Margin="0 0 20 0">
-                <Button Content="Lưu" Style="{DynamicResource MainBtn}"/>
-                <Button Content="Xóa" Style="{DynamicResource MainBtn}"/>
+                <Button x:Name="Save_btn" Content="Lưu" Style="{DynamicResource MainBtn}" Click="Save_btn_Click"/>
+                <Button x:Name="Xoa_btn" Content="Xóa" Style="{DynamicResource MainBtn}" Click="Xoa_btn_Click"/>
             </StackPanel>
 
         </Grid>

@@ -10,13 +10,13 @@ namespace DuAn_QuanLiKhachSan
     {
         public string Name { get; set; }
         public double Value { get; set; }
-        public string tinhTrang{ get; set; }
+        public string Image { get; set; }
 
-        public Product(string name, double value, string tinhtrang)
+        public Product(string name, double value, string image)
         {
             Name = name;
             Value = value;
-            tinhTrang = tinhtrang;
+            Image = image;
         }
     }
 }

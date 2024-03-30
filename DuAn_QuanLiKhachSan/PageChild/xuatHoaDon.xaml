@@ -6,14 +6,14 @@
         xmlns:local="clr-namespace:DuAn_QuanLiKhachSan.PageChild"
          xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="Hóa đơn" Height="800" Width="540" ResizeMode="NoResize" FontFamily="Roboto" WindowStartupLocation="CenterScreen"  WindowStyle="None">
+        Title="Hóa đơn" Height="600" Width="540" ResizeMode="NoResize" FontFamily="Roboto" WindowStartupLocation="CenterScreen"  WindowStyle="None">
     <Border BorderThickness="1" BorderBrush="#FF807D7D" >
-        <StackPanel Height="800">
+        <StackPanel Height="600">
             <StackPanel Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,0,8,0" Height="30" Orientation="Horizontal" FlowDirection="RightToLeft">
                 <Button x:Name="btnClose" Style="{StaticResource IconButtonsStyle}" Content="{DynamicResource close}" Click="btnClose_Click" Tag="IsCloseButton"/>
                 <Button x:Name="btnMinimize" Style="{DynamicResource IconButtonsStyle}" Content="{DynamicResource minimize}" Click="btnMinimize_Click"/>
             </StackPanel>
-            <ScrollViewer Height="774">
+            <ScrollViewer Height="574">
                 <ScrollViewer.Resources>
 
                 </ScrollViewer.Resources>
@@ -22,44 +22,44 @@
                         <Image Source="/imgs/LOGO (2).png" Width="100" Height="100" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20 0 0 0"/>
                         <TextBlock Text="Hóa Đơn" VerticalAlignment="Center" FontSize="40" FontWeight="Bold" Margin="60 10 0 0" Foreground="#FFFBE188" HorizontalAlignment="Center"/>
                         <Button x:Name="btnInHoaDon" Padding="0" Width="40" Height="40" Background="Transparent" BorderThickness="0" Margin="0 0 10 0"
-                        ToolTip="In hóa đơn" HorizontalAlignment="Right" Click="btnInHoaDon_Click">
+                        ToolTip="In hóa đơn" HorizontalAlignment="Right" >
                             <materialDesign:PackIcon Kind="Printer" Width="30" Height="30" Foreground="#FF797979"/>
                         </Button>
                     </Grid>
                     <StackPanel HorizontalAlignment="Stretch" Margin="20 0 20 0" Width="480">
                         <Grid HorizontalAlignment="Stretch">
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="3*"/>
                                 <ColumnDefinition Width="1*"/>
                             </Grid.ColumnDefinitions>
                             <StackPanel Grid.Column="0" Margin="10">
                                 <TextBlock x:Name="txbTenKH"  FontSize="20" Margin="5"/>
                                 <StackPanel Orientation="Horizontal">
                                     <TextBlock Text="Ngày lập hóa đơn:" FontSize="12" Margin="5"/>
-                                    <TextBlock x:Name="txbNgayLapHD" FontSize="12" Margin="5" FontWeight="DemiBold"/>
+                                    <TextBlock Text="04 Jul 2019" x:Name="txbNgayLapHD" FontSize="12" Margin="5" FontWeight="DemiBold"/>
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal">
-                                    <TextBlock Text="Mã hóa đơn:" FontSize="12" Margin="5"/>
-                                    <TextBlock  x:Name="txbMaHoaDon" FontSize="12" Margin="5" FontWeight="DemiBold"/>
+                                    <TextBlock Text="Số hóa đơn:" FontSize="12" Margin="5"/>
+                                    <TextBlock  x:Name="txbSoHoaDon" FontSize="12" Margin="5" FontWeight="DemiBold"/>
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal">
                                     <TextBlock Text="Nhân viên:" FontSize="12" Margin="5"/>
-                                    <TextBlock Text="Huỳnh Ngọc Luận" x:Name="txbNhanVien" FontSize="12" Margin="5" FontWeight="DemiBold"/>
+                                    <TextBlock Text="Nguyễn Văn Duy" x:Name="txbNhanVien" FontSize="12" Margin="5" FontWeight="DemiBold"/>
                                 </StackPanel>
                             </StackPanel>
                             <StackPanel Grid.Column="1" Margin="10">
 
                                 <StackPanel Orientation="Horizontal"  Margin="0 30 0 0">
                                     <TextBlock Text="Số phòng:" FontSize="12" Margin="5"/>
-                                    <TextBlock x:Name="txbSoPhong"   FontSize="12" Margin="5" FontWeight="DemiBold"/>
+                                    <TextBlock x:Name="txbSoPhong" Text="P.101"  FontSize="12" Margin="5" FontWeight="DemiBold"/>
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal"  >
                                     <TextBlock Text="Số người:" FontSize="12" Margin="5"/>
-                                    <TextBlock x:Name="txbSoNguoi" FontSize="12" Margin="5" FontWeight="DemiBold"/>
+                                    <TextBlock x:Name="txbSoNguoi" Text="3"  FontSize="12" Margin="5" FontWeight="DemiBold"/>
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal"  >
                                     <TextBlock x:Name="txbSoNgayOrGio" Text="Số ngày:" FontSize="12" Margin="5"/>
-                                    <TextBlock x:Name="txbSoNgay"  FontSize="12" Margin="5" FontWeight="DemiBold"/>
+                                    <TextBlock x:Name="txbSoNgay" Text="3"  FontSize="12" Margin="5" FontWeight="DemiBold"/>
                                 </StackPanel>
                             </StackPanel>
                         </Grid>
@@ -77,7 +77,10 @@
                             <TextBlock Text="Thành tiền" Grid.Column="3" FontSize="12" FontWeight="ExtraLight" HorizontalAlignment="Right" Margin="0 0 10 0"/>
                         </Grid>
                         <Rectangle Fill="Black" Height="1" Margin="5 2" Opacity="0.5"/>
-                        <ListView x:Name="lvDichVuDaSD" ItemsSource="{Binding DichVus}" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Width="480">
+                        <ListView x:Name="lvDichVuDaSD" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Width="480">
+                            <ListView.Resources>
+                               
+                            </ListView.Resources>
                             <ListView.Template>
                                 <ControlTemplate>
                                     <ItemsPresenter />
@@ -92,10 +95,10 @@
                                             <ColumnDefinition Width="1*"/>
                                             <ColumnDefinition Width="1*"/>
                                         </Grid.ColumnDefinitions>
-                                        <TextBlock Text="{Binding tenDV}" Grid.Column="0" Margin="10 0 0 0"/>
-                                        <TextBlock Text="{Binding giaTien , StringFormat={}{0:N0}}" Grid.Column="1" HorizontalAlignment="Center"/>
-                                        <TextBlock Text="{Binding soLuong}" Grid.Column="2" HorizontalAlignment="Center"/>
-                                        <TextBlock Text="{Binding tongTien, StringFormat={}{0:N0}}" Grid.Column="3" HorizontalAlignment="Center" Foreground="#FF62013C"/>
+                                        <TextBlock Text="{Binding TenDV}" Grid.Column="0" Margin="10 0 0 0"/>
+                                        <TextBlock Text="{Binding Gia , StringFormat={}{0:N0}}" Grid.Column="1" HorizontalAlignment="Center"/>
+                                        <TextBlock Text="{Binding SoLuong}" Grid.Column="2" HorizontalAlignment="Center"/>
+                                        <TextBlock Text="{Binding ThanhTien, StringFormat={}{0:N0}}" Grid.Column="3" HorizontalAlignment="Center" Foreground="#FF62013C"/>
                                     </Grid>
                                 </DataTemplate>
                             </ListView.ItemTemplate>
@@ -112,20 +115,20 @@
                                 <ColumnDefinition Width="1*"/>
                             </Grid.ColumnDefinitions>
                             <Grid Grid.Column="0">
-                                <TextBlock Text="Tổng tiền :" FontSize="18"  VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                                <TextBlock Text="Tổng tiền :" FontSize="15"  VerticalAlignment="Center" HorizontalAlignment="Right"/>
                             </Grid>
                             <StackPanel Grid.Column="1">
-                                <TextBlock x:Name="txbTongTien" FontSize="25" Margin="5" HorizontalAlignment="Right"  FontWeight="Bold"/>
+                                <TextBlock x:Name="txbTongTien"  Text="15.000.000 VND"  FontSize="25" Margin="5" HorizontalAlignment="Right"  FontWeight="Bold"/>
                             </StackPanel>
                         </Grid>
                         <Rectangle Fill="Black" Height="1" Margin="5" Opacity="0.5"/>
 
                         <Grid Margin="0 20" HorizontalAlignment="Stretch">
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="Cảm ơn quý khách!" VerticalAlignment="Center" FontSize="22" Margin="5" FontWeight="Bold"/>
+                                <TextBlock Text="Cảm ơn quý khách!" VerticalAlignment="Center" FontSize="20" Margin="5" FontWeight="Bold"/>
                             </StackPanel>
                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom">
-                                <TextBlock Text="hoteldeluna@email.com" VerticalAlignment="Center" Margin="5" FontWeight="Light"/>
+                                <TextBlock Text="hoteldeluna@email.com" VerticalAlignment="Center" FontSize="8" Margin="5" FontWeight="Light"/>
                                 <TextBlock Text="+84 68 93 2254" VerticalAlignment="Center" FontSize="8" Margin="5" FontWeight="Light"/>
                             </StackPanel>
                         </Grid>

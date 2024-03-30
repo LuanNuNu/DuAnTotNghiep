@@ -50,6 +50,7 @@ namespace DuAn_QuanLiKhachSan.PageChild
                     bitmap.UriSource = new Uri(selectedFileName);
                     bitmap.EndInit();
                     ImageViewer1.Source = bitmap;
+                    System.Windows.MessageBox.Show(selectedFileName);
                 }
 
                 else
