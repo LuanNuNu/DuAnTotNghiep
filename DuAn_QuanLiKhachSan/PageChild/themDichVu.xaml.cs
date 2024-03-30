@@ -13,23 +13,41 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using DuAn_QuanLiKhachSan.Views;
+using BUS_QLKS;
+using DTO_QLKS;
 
 namespace DuAn_QuanLiKhachSan.PageChild
 {
     /// <summary>
     /// Interaction logic for themDichVu.xaml
     /// </summary>
+    /// 
+
+    
     public partial class themDichVu : Window
     {
+        public event EventHandler ChildClosed;
+        private void ChildWindowClosed(object sender, EventArgs e)
+        {
+            /*Copy vào btn*/
+            /*ChildClosed?.Invoke(this, EventArgs.Empty);*/
+
+            loadcombo();
+        }
+        public static BUS_DichVu bUS_DichVu = new BUS_DichVu();
+        public static BUS_LoaiDichVu bUS_LoaiDichVu = new BUS_LoaiDichVu();
         public themDichVu()
         {
             InitializeComponent();
+            loadcombo();
         }
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
-            Close();
-        }
 
+            Close();
+            
+        }
+        
         private void btnMinimize_Click(object sender, RoutedEventArgs e)
         {
             WindowState = WindowState.Minimized;
@@ -39,8 +57,74 @@ namespace DuAn_QuanLiKhachSan.PageChild
         {
             
             themLoaiDichVu themLoaiDichVu = new themLoaiDichVu();
+            themLoaiDichVu.ChildClosed += ChildWindowClosed;
             themLoaiDichVu.WindowStartupLocation = WindowStartupLocation.CenterScreen;
             themLoaiDichVu.Show();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if(TenDichVu.Text !="" && loaiDichVu_combo.Text !="" && GiaBan.Text != "")
+            {
+                
+
+                // Parse GiaBan.Text to decimal
+                double a = double.Parse(GiaBan.Text);
+                string selectitem = loaiDichVu_combo.Text;
+                
+
+                DTO_QLKS.DichVu dichVu = new DTO_QLKS.DichVu
+                {
+                    
+                    TenDV = TenDichVu.Text,
+                    MaLoaiDV = loaiDichVu_combo.SelectedValue.ToString(),
+                    GiaTien = a,
+                };
+
+                bUS_DichVu.Insert(dichVu);
+                System.Windows.MessageBox.Show("Lưu thành công");
+                ChildClosed?.Invoke(this, EventArgs.Empty);
+                TenDichVu.Text = "";
+                loaiDichVu_combo.Text = "";
+                GiaBan.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin");
+            }
+            
+
+        }
+
+        private void GiaBan_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            // Check if the input is a valid numeric value
+            if (!IsNumeric(e.Text))
+            {
+                e.Handled = true; // Cancel the input
+            }
+        }
+
+        private bool IsNumeric(string text)
+        {
+            double result;
+            return double.TryParse(text, out result);
+        }
+
+        private void Xoa_btn_Click(object sender, RoutedEventArgs e)
+        {
+            TenDichVu.Text = "";
+            loaiDichVu_combo.Text = "";
+            GiaBan.Text = "";
+        }
+
+        private void loadcombo()
+        {
+            var result = bUS_LoaiDichVu.GetAll();
+            loaiDichVu_combo.ItemsSource = result;
+            loaiDichVu_combo.DisplayMemberPath = "TenLoaiDV";
+            loaiDichVu_combo.SelectedValuePath = "MaLoaiDV";
+        }
+
     }
 }

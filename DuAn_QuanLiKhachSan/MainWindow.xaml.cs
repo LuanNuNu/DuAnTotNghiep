@@ -60,7 +60,8 @@ namespace DuAn_QuanLiKhachSan
 
             var ThongBao = new DialogCustoms("Bạn có thật sự muốn xóa", "Thông báo", DialogCustoms.YesNo);
             if (ThongBao.ShowDialog() == true)
-            {          
+            {
+                
                     new DialogCustoms("Xóa thành công", "Thông báo", DialogCustoms.OK).Show();
             
                 
