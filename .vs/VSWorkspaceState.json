@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\DuAn_QuanLiKhachSan",
-    "\\DuAn_QuanLiKhachSan\\BUS_QLKS"
+    "\\DuAn_QuanLiKhachSan\\BUS_QLKS",
+    "\\DuAn_QuanLiKhachSan\\PageChild"
   ],
-  "SelectedNode": "\\DuAn_QuanLiKhachSan\\BUS_QLKS\\BUS_DichVu.cs",
+  "SelectedNode": "\\DuAn_QuanLiKhachSan\\PageChild\\themLoaiPhong.xaml.cs",
   "PreviewInSolutionExplorer": false
 }

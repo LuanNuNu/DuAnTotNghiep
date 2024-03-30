@@ -1,45 +1,45 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\",
+  "WorkspaceRootPath": "E:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{40A534A7-6729-49F9-9909-35AF8DF4F36B}|DuAn_QuanLiKhachSan.csproj|d:\\duantotnghiep\\duan_quanlikhachsan\\pagechild\\themloaiphong.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40A534A7-6729-49F9-9909-35AF8DF4F36B}|DuAn_QuanLiKhachSan.csproj|solutionrelative:pagechild\\themloaiphong.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40A534A7-6729-49F9-9909-35AF8DF4F36B}|DuAn_QuanLiKhachSan.csproj|d:\\duantotnghiep\\duan_quanlikhachsan\\pagechild\\themdichvu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40A534A7-6729-49F9-9909-35AF8DF4F36B}|DuAn_QuanLiKhachSan.csproj|solutionrelative:pagechild\\themdichvu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40A534A7-6729-49F9-9909-35AF8DF4F36B}|DuAn_QuanLiKhachSan.csproj|d:\\duantotnghiep\\duan_quanlikhachsan\\pagechild\\themdichvu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{40A534A7-6729-49F9-9909-35AF8DF4F36B}|DuAn_QuanLiKhachSan.csproj|solutionrelative:pagechild\\themdichvu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1A601DE-D1D7-4659-ACC4-B702EFAA8C3A}|DAL_QLKS\\DAL_QLKS.csproj|D:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\dal_qlks\\dal_dichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1A601DE-D1D7-4659-ACC4-B702EFAA8C3A}|DAL_QLKS\\DAL_QLKS.csproj|solutionrelative:dal_qlks\\dal_dichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40A534A7-6729-49F9-9909-35AF8DF4F36B}|DuAn_QuanLiKhachSan.csproj|D:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\views\\dichvu.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{40A534A7-6729-49F9-9909-35AF8DF4F36B}|DuAn_QuanLiKhachSan.csproj|solutionrelative:views\\dichvu.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3802830-01EA-4DF9-83DB-949CF7F88D09}|BUS_QLKS\\BUS_QLKS.csproj|d:\\duantotnghiep\\duan_quanlikhachsan\\bus_qlks\\bus_dichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D3802830-01EA-4DF9-83DB-949CF7F88D09}|BUS_QLKS\\BUS_QLKS.csproj|E:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\bus_qlks\\bus_dichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D3802830-01EA-4DF9-83DB-949CF7F88D09}|BUS_QLKS\\BUS_QLKS.csproj|solutionrelative:bus_qlks\\bus_dichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1A601DE-D1D7-4659-ACC4-B702EFAA8C3A}|DAL_QLKS\\DAL_QLKS.csproj|D:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\dal_qlks\\dal_khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1A601DE-D1D7-4659-ACC4-B702EFAA8C3A}|DAL_QLKS\\DAL_QLKS.csproj|solutionrelative:dal_qlks\\dal_khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40A534A7-6729-49F9-9909-35AF8DF4F36B}|DuAn_QuanLiKhachSan.csproj|D:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\views\\dichvu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{40A534A7-6729-49F9-9909-35AF8DF4F36B}|DuAn_QuanLiKhachSan.csproj|solutionrelative:views\\dichvu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3802830-01EA-4DF9-83DB-949CF7F88D09}|BUS_QLKS\\BUS_QLKS.csproj|D:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\bus_qlks\\bus_khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D3802830-01EA-4DF9-83DB-949CF7F88D09}|BUS_QLKS\\BUS_QLKS.csproj|E:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\bus_qlks\\bus_khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D3802830-01EA-4DF9-83DB-949CF7F88D09}|BUS_QLKS\\BUS_QLKS.csproj|solutionrelative:bus_qlks\\bus_khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A534A7-6729-49F9-9909-35AF8DF4F36B}|DuAn_QuanLiKhachSan.csproj|D:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\views\\khachhang.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "AbsoluteMoniker": "D:0:0:{40A534A7-6729-49F9-9909-35AF8DF4F36B}|DuAn_QuanLiKhachSan.csproj|e:\\duantotnghiep\\duan_quanlikhachsan\\pagechild\\themloaiphong.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40A534A7-6729-49F9-9909-35AF8DF4F36B}|DuAn_QuanLiKhachSan.csproj|solutionrelative:pagechild\\themloaiphong.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A534A7-6729-49F9-9909-35AF8DF4F36B}|DuAn_QuanLiKhachSan.csproj|E:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\pagechild\\themdichvu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40A534A7-6729-49F9-9909-35AF8DF4F36B}|DuAn_QuanLiKhachSan.csproj|solutionrelative:pagechild\\themdichvu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A534A7-6729-49F9-9909-35AF8DF4F36B}|DuAn_QuanLiKhachSan.csproj|E:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\pagechild\\themdichvu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{40A534A7-6729-49F9-9909-35AF8DF4F36B}|DuAn_QuanLiKhachSan.csproj|solutionrelative:pagechild\\themdichvu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1A601DE-D1D7-4659-ACC4-B702EFAA8C3A}|DAL_QLKS\\DAL_QLKS.csproj|E:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\dal_qlks\\dal_dichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1A601DE-D1D7-4659-ACC4-B702EFAA8C3A}|DAL_QLKS\\DAL_QLKS.csproj|solutionrelative:dal_qlks\\dal_dichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A534A7-6729-49F9-9909-35AF8DF4F36B}|DuAn_QuanLiKhachSan.csproj|E:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\views\\dichvu.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{40A534A7-6729-49F9-9909-35AF8DF4F36B}|DuAn_QuanLiKhachSan.csproj|solutionrelative:views\\dichvu.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1A601DE-D1D7-4659-ACC4-B702EFAA8C3A}|DAL_QLKS\\DAL_QLKS.csproj|E:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\dal_qlks\\dal_khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1A601DE-D1D7-4659-ACC4-B702EFAA8C3A}|DAL_QLKS\\DAL_QLKS.csproj|solutionrelative:dal_qlks\\dal_khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A534A7-6729-49F9-9909-35AF8DF4F36B}|DuAn_QuanLiKhachSan.csproj|E:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\views\\dichvu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{40A534A7-6729-49F9-9909-35AF8DF4F36B}|DuAn_QuanLiKhachSan.csproj|solutionrelative:views\\dichvu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A534A7-6729-49F9-9909-35AF8DF4F36B}|DuAn_QuanLiKhachSan.csproj|E:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\views\\khachhang.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
       "RelativeMoniker": "D:0:0:{40A534A7-6729-49F9-9909-35AF8DF4F36B}|DuAn_QuanLiKhachSan.csproj|solutionrelative:views\\khachhang.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     }
   ],
@@ -50,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 205,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,11 +58,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "themLoaiPhong.xaml.cs",
-              "DocumentMoniker": "D:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\PageChild\\themLoaiPhong.xaml.cs",
+              "DocumentMoniker": "E:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\PageChild\\themLoaiPhong.xaml.cs",
               "RelativeDocumentMoniker": "PageChild\\themLoaiPhong.xaml.cs",
-              "ToolTip": "D:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\PageChild\\themLoaiPhong.xaml.cs",
+              "ToolTip": "E:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\PageChild\\themLoaiPhong.xaml.cs",
               "RelativeToolTip": "PageChild\\themLoaiPhong.xaml.cs",
               "ViewState": "AQIAABYAAAAAAAAAAAAgwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -71,61 +71,57 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "themDichVu.xaml.cs",
-              "DocumentMoniker": "D:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\PageChild\\themDichVu.xaml.cs",
+              "DocumentMoniker": "E:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\PageChild\\themDichVu.xaml.cs",
               "RelativeDocumentMoniker": "PageChild\\themDichVu.xaml.cs",
-              "ToolTip": "D:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\PageChild\\themDichVu.xaml.cs",
+              "ToolTip": "E:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\PageChild\\themDichVu.xaml.cs",
               "RelativeToolTip": "PageChild\\themDichVu.xaml.cs",
               "ViewState": "AQIAAG4AAAAAAAAAAAAAwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-30T03:30:06.503Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "themDichVu.xaml",
-              "DocumentMoniker": "D:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\PageChild\\themDichVu.xaml",
-              "RelativeDocumentMoniker": "PageChild\\themDichVu.xaml",
-              "ToolTip": "D:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\PageChild\\themDichVu.xaml",
-              "RelativeToolTip": "PageChild\\themDichVu.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-30T03:30:01.198Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-30T03:30:06.503Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "DichVu.xaml.cs",
-              "DocumentMoniker": "D:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\Views\\DichVu.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\DichVu.xaml.cs",
-              "ToolTip": "D:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\Views\\DichVu.xaml.cs",
-              "RelativeToolTip": "Views\\DichVu.xaml.cs",
-              "ViewState": "AQIAAHgAAAAAAAAAAAAwwH4AAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T15:41:39.764Z",
-              "EditorCaption": ""
+              "Title": "themDichVu.xaml",
+              "DocumentMoniker": "E:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\PageChild\\themDichVu.xaml",
+              "RelativeDocumentMoniker": "PageChild\\themDichVu.xaml",
+              "ToolTip": "E:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\PageChild\\themDichVu.xaml",
+              "RelativeToolTip": "PageChild\\themDichVu.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-30T03:30:01.198Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
+              "Title": "DichVu.xaml.cs",
+              "DocumentMoniker": "E:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\Views\\DichVu.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\DichVu.xaml.cs",
+              "ToolTip": "E:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\Views\\DichVu.xaml.cs",
+              "RelativeToolTip": "Views\\DichVu.xaml.cs",
+              "ViewState": "AQIAAHgAAAAAAAAAAAAwwH4AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T15:41:39.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "DichVu.xaml",
-              "DocumentMoniker": "D:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\Views\\DichVu.xaml",
+              "DocumentMoniker": "E:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\Views\\DichVu.xaml",
               "RelativeDocumentMoniker": "Views\\DichVu.xaml",
-              "ToolTip": "D:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\Views\\DichVu.xaml",
+              "ToolTip": "E:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\Views\\DichVu.xaml",
               "RelativeToolTip": "Views\\DichVu.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-27T15:41:37.29Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-27T15:41:37.29Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "KhachHang.xaml.cs",
-              "DocumentMoniker": "D:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\Views\\KhachHang.xaml.cs",
+              "DocumentMoniker": "E:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\Views\\KhachHang.xaml.cs",
               "RelativeDocumentMoniker": "Views\\KhachHang.xaml.cs",
-              "ToolTip": "D:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\Views\\KhachHang.xaml.cs",
+              "ToolTip": "E:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\Views\\KhachHang.xaml.cs",
               "RelativeToolTip": "Views\\KhachHang.xaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -133,51 +129,50 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "BUS_KhachHang.cs",
-              "DocumentMoniker": "D:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\BUS_QLKS\\BUS_KhachHang.cs",
+              "DocumentMoniker": "E:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\BUS_QLKS\\BUS_KhachHang.cs",
               "RelativeDocumentMoniker": "BUS_QLKS\\BUS_KhachHang.cs",
-              "ToolTip": "D:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\BUS_QLKS\\BUS_KhachHang.cs",
+              "ToolTip": "E:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\BUS_QLKS\\BUS_KhachHang.cs",
               "RelativeToolTip": "BUS_QLKS\\BUS_KhachHang.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAQAAAAAAAAAAEBVwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T15:40:30.559Z"
+              "WhenOpened": "2024-03-27T15:40:30.559Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "DAL_KhachHang.cs",
-              "DocumentMoniker": "D:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\DAL_QLKS\\DAL_KhachHang.cs",
+              "DocumentMoniker": "E:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\DAL_QLKS\\DAL_KhachHang.cs",
               "RelativeDocumentMoniker": "DAL_QLKS\\DAL_KhachHang.cs",
-              "ToolTip": "D:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\DAL_QLKS\\DAL_KhachHang.cs",
+              "ToolTip": "E:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\DAL_QLKS\\DAL_KhachHang.cs",
               "RelativeToolTip": "DAL_QLKS\\DAL_KhachHang.cs",
               "ViewState": "AQIAABMAAAAAAAAAAAAgwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T15:40:28.674Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DAL_DichVu.cs",
-              "DocumentMoniker": "D:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\DAL_QLKS\\DAL_DichVu.cs",
-              "RelativeDocumentMoniker": "DAL_QLKS\\DAL_DichVu.cs",
-              "ToolTip": "D:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\DAL_QLKS\\DAL_DichVu.cs",
-              "RelativeToolTip": "DAL_QLKS\\DAL_DichVu.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAqwEAAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T07:22:34.884Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-27T15:40:28.674Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "DAL_DichVu.cs",
+              "DocumentMoniker": "E:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\DAL_QLKS\\DAL_DichVu.cs",
+              "RelativeDocumentMoniker": "DAL_QLKS\\DAL_DichVu.cs",
+              "ToolTip": "E:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\DAL_QLKS\\DAL_DichVu.cs",
+              "RelativeToolTip": "DAL_QLKS\\DAL_DichVu.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAqwEAAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T07:22:34.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "BUS_DichVu.cs",
-              "DocumentMoniker": "D:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\BUS_QLKS\\BUS_DichVu.cs",
+              "DocumentMoniker": "E:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\BUS_QLKS\\BUS_DichVu.cs",
               "RelativeDocumentMoniker": "BUS_QLKS\\BUS_DichVu.cs",
-              "ToolTip": "D:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\BUS_QLKS\\BUS_DichVu.cs",
+              "ToolTip": "E:\\DuAnTotNghiep\\DuAn_QuanLiKhachSan\\BUS_QLKS\\BUS_DichVu.cs",
               "RelativeToolTip": "BUS_QLKS\\BUS_DichVu.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAA4wCoAAAAAAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAcwCoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-27T03:45:02.653Z",
               "EditorCaption": ""
