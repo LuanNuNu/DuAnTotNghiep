@@ -50,6 +50,8 @@
     <Compile Include="DAL_CHITIETDICHVUPDP.cs" />
     <Compile Include="DAL_DICHVU.cs" />
     <Compile Include="DAL_HOADON.cs" />
+    <Compile Include="DAL_KHACHHANG.cs" />
+    <Compile Include="DAL_LOAIDICHVU.cs" />
     <Compile Include="DAL_LOAIPHONG.cs" />
     <Compile Include="DAL_PHIEUDATPHONG.cs" />
     <Compile Include="DAL_PHONG.cs" />

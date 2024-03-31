@@ -45,6 +45,8 @@
     <Compile Include="BUS_CHITIETDICHVUPDP.cs" />
     <Compile Include="BUS_DICHVU.cs" />
     <Compile Include="BUS_HOADON.cs" />
+    <Compile Include="BUS_KHACHHANG.cs" />
+    <Compile Include="BUS_LOAIDICHVU.cs" />
     <Compile Include="BUS_LOAIPHONG.cs" />
     <Compile Include="BUS_PHIEUDATPHONG.cs" />
     <Compile Include="BUS_PHONG.cs" />

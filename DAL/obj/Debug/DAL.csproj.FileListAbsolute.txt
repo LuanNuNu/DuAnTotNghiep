@@ -11,3 +11,16 @@ D:\Dự án tốt nghiệp\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 D:\Dự án tốt nghiệp\DAL\obj\Debug\DAL.csproj.CopyComplete
 D:\Dự án tốt nghiệp\DAL\obj\Debug\DAL.dll
 D:\Dự án tốt nghiệp\DAL\obj\Debug\DAL.pdb
+D:\MASTER\Dự án tốt nghiệp\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\MASTER\Dự án tốt nghiệp\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\MASTER\Dự án tốt nghiệp\DAL\obj\Debug\DAL.dll
+D:\MASTER\Dự án tốt nghiệp\DAL\obj\Debug\DAL.pdb
+D:\MASTER\Dự án tốt nghiệp\DAL\bin\Debug\DAL.dll.config
+D:\MASTER\Dự án tốt nghiệp\DAL\bin\Debug\DAL.dll
+D:\MASTER\Dự án tốt nghiệp\DAL\bin\Debug\DAL.pdb
+D:\MASTER\Dự án tốt nghiệp\DAL\bin\Debug\DTO.dll
+D:\MASTER\Dự án tốt nghiệp\DAL\bin\Debug\EntityFramework.dll
+D:\MASTER\Dự án tốt nghiệp\DAL\bin\Debug\DTO.pdb
+D:\MASTER\Dự án tốt nghiệp\DAL\bin\Debug\DTO.dll.config
+D:\MASTER\Dự án tốt nghiệp\DAL\bin\Debug\EntityFramework.xml
+D:\MASTER\Dự án tốt nghiệp\DAL\obj\Debug\DAL.csproj.CopyComplete

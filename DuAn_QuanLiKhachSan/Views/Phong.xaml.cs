@@ -42,7 +42,7 @@ namespace DuAn_QuanLiKhachSan.Views
         {        
             dtpChonNgay.Text = DateTime.Now.ToShortDateString();
             tpGio.Text = DateTime.Now.ToString("HH:mm:ss");
-            timKiemPhongTheoThoiGian();
+/*            timKiemPhongTheoThoiGian();*/
             lvPhongDon.PreviewMouseLeftButtonUp += ListView_PreviewMouseLeftButtonUp;
             lvPhongDoi.PreviewMouseLeftButtonUp += ListView_PreviewMouseLeftButtonUp;
             lvPhongGiaDinh.PreviewMouseLeftButtonUp += ListView_PreviewMouseLeftButtonUp;

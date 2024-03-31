@@ -29,37 +29,32 @@
                 <StackPanel Orientation="Vertical">
                     <StackPanel Orientation="Vertical" Margin="20 0">
                         <Label Content="MÃ DỊCH VỤ" FontWeight="Bold" Foreground="{DynamicResource PrimaryTextColor}"/>
-                        <TextBox Tag="Mã dịch vụ tự động" Style="{DynamicResource TextBoxStyle}" HorizontalAlignment="Left" Width="300" FontSize="15" IsEnabled="False" Foreground="{DynamicResource PrimaryTextColor}"/>
+                        <TextBox x:Name="MaDichVu" Tag="Mã dịch vụ tự động" Style="{DynamicResource TextBoxStyle}" HorizontalAlignment="Left" Width="300" FontSize="15" IsEnabled="False" Foreground="{DynamicResource PrimaryTextColor}"/>
                     </StackPanel>
                     <StackPanel Orientation="Vertical" Margin="20 0">
                         <Label Content="TÊN DỊCH VỤ" FontWeight="Bold" Foreground="{DynamicResource PrimaryTextColor}"/>
-                        <TextBox Style="{DynamicResource TextBoxStyle}" HorizontalAlignment="Left" Width="300" FontSize="15" Foreground="{DynamicResource PrimaryTextColor}"/>
+                        <TextBox x:Name="TenDichVu" Style="{DynamicResource TextBoxStyle}" HorizontalAlignment="Left" Width="300" FontSize="15" Foreground="{DynamicResource PrimaryTextColor}"/>
 
                     </StackPanel>
                     <StackPanel Orientation="Vertical" Margin="20 0">
                         <Label Content="LOẠI DỊCH VỤ" FontWeight="Bold" Foreground="{DynamicResource PrimaryTextColor}"/>
-                        <ComboBox x:Name="loaiDichVu" HorizontalAlignment="Left" Width="300" FontSize="15" Height="32" Foreground="{DynamicResource PrimaryTextColor}" Style="{DynamicResource ComboBoxFlatStyle}">
-                            <ComboBoxItem Content="adfaf"/>
-                            <ComboBoxItem Content="adfaf"/>
-                            <ComboBoxItem Content="adfaf"/>
+                        <ComboBox x:Name="loaiDichVu_combo" HorizontalAlignment="Left" Width="300" FontSize="15" Height="32" Foreground="{DynamicResource PrimaryTextColor}" Style="{DynamicResource ComboBoxFlatStyle}">
+
                         </ComboBox>
                     </StackPanel>
                 </StackPanel>
                 <StackPanel Orientation="Vertical" Grid.Column="1">
                     <StackPanel Orientation="Vertical" Margin="20 0">
                         <Label Content="GIÁ BÁN" FontWeight="Bold" Foreground="{DynamicResource PrimaryTextColor}"/>
-                        <TextBox Style="{DynamicResource TextBoxStyle}" HorizontalAlignment="Left" Width="140" FontSize="15" Foreground="{DynamicResource PrimaryTextColor}"/>
+                        <TextBox x:Name="GiaBan" Style="{DynamicResource TextBoxStyle}" HorizontalAlignment="Left" Width="140" FontSize="15" Foreground="{DynamicResource PrimaryTextColor}" PreviewTextInput="GiaBan_PreviewTextInput"/>
                     </StackPanel>
-                    <StackPanel Orientation="Vertical" Margin="20 0">
-                        <Label Content="ĐƠN VỊ TÍNH" FontWeight="Bold" Foreground="{DynamicResource PrimaryTextColor}"/>
-                        <TextBox Style="{DynamicResource TextBoxStyle}" HorizontalAlignment="Left" Width="140" FontSize="15" Foreground="{DynamicResource PrimaryTextColor}"/>
-                    </StackPanel>
+
                 </StackPanel>
             </Grid>
             <StackPanel Orientation="Horizontal" Grid.Row="3" HorizontalAlignment="Right" Margin="0 0 20 0">
                 <Button x:Name="themLoaiDichVu" Content="Thêm loại dịch vụ" Style="{DynamicResource MainBtn}" Width="200" Click="themLoaiDichVu_Click"/>
-                <Button Content="Lưu" Style="{DynamicResource MainBtn}"/>
-                <Button Content="Xóa" Style="{DynamicResource MainBtn}"/>
+                <Button Content="Lưu" Style="{DynamicResource MainBtn}" Click="Button_Click"/>
+                <Button x:Name="Xoa_btn" Content="Xóa" Style="{DynamicResource MainBtn}" Click="Xoa_btn_Click"/>
             </StackPanel>
 
         </Grid>
